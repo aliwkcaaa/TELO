@@ -396,8 +396,8 @@ async def export(message: Message):
 @router.message(Command("clear_all"))
 async def clear_all_bookings(message: Message):
     """Удаляет ВСЕ записи из базы данных. Только для администратора!"""
-    # ⚠️ ЗАМЕНИТЕ 123456789 на ваш реальный Telegram ID
-    # Узнать можно у бота @userinfobot
+
+    ADMIN_ID = 1847453109
     ADMIN_ID = 5449835679
     
     if message.from_user.id != ADMIN_ID:
